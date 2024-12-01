@@ -1,0 +1,27 @@
+.popup {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+
+    position: fixed;
+    width: 1824px;
+    height: 40px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    bottom: 16px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    background: rgba(4, 4, 4, 0.06);
+    /* bg-blur/s */
+    backdrop-filter: blur(6px);
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 8px;
+}
+.firstPart {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+}

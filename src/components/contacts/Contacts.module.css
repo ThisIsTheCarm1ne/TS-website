@@ -1,0 +1,62 @@
+.section {
+    display: flex;
+    justify-content: space-between;
+    padding: 96px;
+}
+.section > img {
+    width: 816px;
+    height: 600px;
+
+    box-sizing: border-box;
+
+    border: 1px solid #E3E3E3;
+    border-radius: 24px;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.inputContainers {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.inlineInputContainers {
+    display: flex;
+    gap: 32px;
+}
+.inputContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.inputContainer > label, .labelTextArea {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    /* identical to box height, or 133% */
+
+    color: #8E8E8E;
+}
+.inputContainer > input, .textArea {
+    box-sizing: border-box;
+
+    background: #FEFEFE;
+    border: 1px solid #CCCCCC;
+    border-radius: 12px;
+
+    padding: 14px;
+
+    /* controls/input/m */
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height, or 125% */
+
+    color: #353535;
+}

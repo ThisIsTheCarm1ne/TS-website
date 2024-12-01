@@ -1,0 +1,10 @@
+.section {
+    height: 224px;
+    background-color: #EFEFEF;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 80px;
+}

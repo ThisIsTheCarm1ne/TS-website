@@ -1,0 +1,37 @@
+.footer {
+}
+.topPart {
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: flex-start;
+    justify-content: space-between;
+    padding: 24px 96px;
+    gap: 48px;
+
+    width: 1920px;
+    height: 86.2px;
+    border-bottom: 1px solid #CCCCCC;
+}
+.links {
+    display: flex;
+    gap: 36px;
+}
+.bottomPart {
+    display: flex;
+    height: 72px;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-left: 96px;
+    padding-right: 96px;
+
+    font-size: 16px;
+}
+.socials {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}

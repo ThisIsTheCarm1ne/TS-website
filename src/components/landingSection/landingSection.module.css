@@ -1,0 +1,41 @@
+.landingSection {
+    display: flex;
+    padding: 96px;
+    justify-content: space-between;
+}
+.text {
+    display: flex;
+    flex-direction: column;
+}
+.headerMain {
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 72px;
+    line-height: 80px;
+    margin: 0;
+}
+.headerHighlighted {
+    color: #EB5A0A;
+}
+.textP {
+    color: #353535;
+}
+.listHeader {
+    margin-bottom: 5px;
+}
+.list {
+    list-style: none;
+    margin-top: 0;
+}
+.list > li {
+    display: flex;
+    align-items: stretch;
+    gap: 8px;
+}
+.img {
+    width: 816px;
+    min-width: 432px;
+    height: 600px;
+    border-radius: 32px;
+}
