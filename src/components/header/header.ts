@@ -48,7 +48,19 @@ export default function Header() {
                     </clipPath>
                 </defs>
             </svg>
-            <nav class="${classes.nav}">
+            <button class="${classes.hamburgerBtn}" id="hamburgerBtn">
+                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_23_12697)">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3.1499 7.56274C3.1499 7.14853 3.48569 6.81274 3.8999 6.81274H20.0999C20.5141 6.81274 20.8499 7.14853 20.8499 7.56274C20.8499 7.97696 20.5141 8.31274 20.0999 8.31274H3.8999C3.48569 8.31274 3.1499 7.97696 3.1499 7.56274ZM3.1499 12.9627C3.1499 12.5485 3.48569 12.2127 3.8999 12.2127H20.0999C20.5141 12.2127 20.8499 12.5485 20.8499 12.9627C20.8499 13.377 20.5141 13.7127 20.0999 13.7127H3.8999C3.48569 13.7127 3.1499 13.377 3.1499 12.9627ZM8.5499 18.3627C8.5499 17.9485 8.88569 17.6127 9.2999 17.6127H20.0999C20.5141 17.6127 20.8499 17.9485 20.8499 18.3627C20.8499 18.777 20.5141 19.1127 20.0999 19.1127H9.2999C8.88569 19.1127 8.5499 18.777 8.5499 18.3627Z" fill="#555555"/>
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_23_12697">
+                            <rect width="24" height="24" fill="white" transform="translate(0 0.962646)"/>
+                        </clipPath>
+                    </defs>
+                </svg>
+            </button>
+            <nav class="${classes.nav}" id="navLinks">
                 <button id="btnProduction">
                     Продукция
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -92,7 +104,7 @@ export default function Header() {
                     Контакты
                 </button>
             </nav>
-            <div class="${classes.ctaSection}">
+            <div class="${classes.ctaSection}" id="ctaSection">
                 <button class="cta-btn">Заказать звонок</button>
                 <div class="${classes.ctaContacts}">
                     <p>
@@ -125,6 +137,50 @@ export default function Header() {
             </div>
           </div>
         </header>
+        <div id="hamburgerLinks" style="display: none" class="${classes.nav}">
+            <button id="btnProduction">
+                    Продукция
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_59_686)">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.05806 7.30781C5.30214 7.06374 5.69786 7.06374 5.94194 7.30781L10 11.3659L14.0581 7.30781C14.3021 7.06374 14.6979 7.06374 14.9419 7.30781C15.186 7.55189 15.186 7.94762 14.9419 8.1917L10.4419 12.6917C10.1979 12.9358 9.80214 12.9358 9.55806 12.6917L5.05806 8.1917C4.81398 7.94762 4.81398 7.55189 5.05806 7.30781Z" fill="#555555"/>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_59_686">
+                                <rect width="20" height="20" fill="white"/>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </button>
+                <button id="btnService">
+                    Услуги и сервис
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_59_686)">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.05806 7.30781C5.30214 7.06374 5.69786 7.06374 5.94194 7.30781L10 11.3659L14.0581 7.30781C14.3021 7.06374 14.6979 7.06374 14.9419 7.30781C15.186 7.55189 15.186 7.94762 14.9419 8.1917L10.4419 12.6917C10.1979 12.9358 9.80214 12.9358 9.55806 12.6917L5.05806 8.1917C4.81398 7.94762 4.81398 7.55189 5.05806 7.30781Z" fill="#555555"/>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_59_686">
+                                <rect width="20" height="20" fill="white"/>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </button>
+                <button id="btnAbout">
+                    О заводе
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_59_686)">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.05806 7.30781C5.30214 7.06374 5.69786 7.06374 5.94194 7.30781L10 11.3659L14.0581 7.30781C14.3021 7.06374 14.6979 7.06374 14.9419 7.30781C15.186 7.55189 15.186 7.94762 14.9419 8.1917L10.4419 12.6917C10.1979 12.9358 9.80214 12.9358 9.55806 12.6917L5.05806 8.1917C4.81398 7.94762 4.81398 7.55189 5.05806 7.30781Z" fill="#555555"/>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_59_686">
+                                <rect width="20" height="20" fill="white"/>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </button>
+                <button>
+                    Контакты
+                </button>
+        </div>
         <div id="popupContainer" style="position: absolute; z-index: 20;"></div>
     `;
     return headerHTML;

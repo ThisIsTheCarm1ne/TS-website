@@ -60,3 +60,20 @@
         width: 704px;
     }
 }
+@media only screen and (max-width: 320px) {
+    .headerMain {
+        font-size: 10vw;
+        line-height: 11vw;
+    }
+    .textP {
+        color: #353535;
+    }
+    .text > button {
+        width: 100% !important;
+        font-size: 5vw;
+    }
+    .img {
+        width: 288px;
+        height: 400px;
+    }
+}

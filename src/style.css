@@ -39,26 +39,9 @@ h1,
 h3 {
   font-family: 'Roboto Condensed';
 }
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vanilla:hover {
-  filter: drop-shadow(0 0 2em #3178c6aa);
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+img {
+  object-fit: cover;
+  object-position: center;
 }
 .cta-btn {
   background: #EB5A0A;
@@ -94,5 +77,11 @@ button {
   body {
     font-size: 2.6vw;
     line-height: 3.125vw;
+  }
+}
+@media only screen and (max-width: 320px) {
+  body {
+    font-size: 6.25vw;
+    line-height: 7.5vw;
   }
 }

@@ -12,6 +12,7 @@ import CookiesPopup from "./components/cookiesPopup/CookiesPopup.ts";
 import cookiesPopupHandler from "./components/cookiesPopup/CookiesPopupHandler.ts";
 import setupSlidingOutText from "./components/aboutSection/aboutSectionHandler.ts";
 import setupContactsFormHandler from "./components/contacts/ContactsHandler.ts";
+import setupHamburgerMenu from "./components/header/SetupHeaderHamburger.ts";
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
     ${Header()}
@@ -27,6 +28,8 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
 setupHeaderPopup("btnProduction", ["Prod Link 1", "Prod Link 2", "Prod Link 3"]);
 setupHeaderPopup("btnService", ["Service Link 1", "Service Link 2", "Service Link 3"]);
 setupHeaderPopup("btnAbout", ["About Link 1", "About Link 2", "About Link 3"]);
+
+setupHamburgerMenu();
 
 setupSlidingOutText("dropdownBtn", "svgIcon");
 

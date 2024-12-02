@@ -146,3 +146,30 @@
         width: 24vw;
     }
 }
+@media only screen and (max-width: 320px) {
+    .section > img {
+        width: 92vw;
+        height: 400px;
+    }
+    .form {
+        gap: 32px;
+    }
+    .contactsHeader {
+        font-size: 40px;
+        line-height: 48px;
+        margin-bottom: 5px;
+    }
+    .inlineInputContainers {
+        flex-direction: column;
+        gap: 16px;
+    }
+    .inputContainer > input {
+        width: 100%;
+    }
+    .passwordCheck {
+        width: 100%;
+    }
+    .form > button {
+        width: 100%;
+    }
+}
