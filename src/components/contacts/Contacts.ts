@@ -5,7 +5,7 @@ import classes from "./Contacts.module.css";
 export default function Contacts() {
     return `
         <section class="${classes.section}">
-            <img src="${mapImage}" />
+            <img src="${mapImage}" alt="map of Saint-Petersburg, Russia" />
             <form class="${classes.form}" id="form">
                 <div>
                     <h1 class="${classes.contactsHeader}">Контакты</h1>

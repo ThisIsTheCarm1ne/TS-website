@@ -25,7 +25,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
     ${CookiesPopup()}
 `
 
-setupHeaderPopup("btnProduction", ["Prod Link 1", "Prod Link 2", "Prod Link 3"]);
+setupHeaderPopup("btnProduction", ["Страница 1", "Страница 2", "Страница 3", "Страница 4"]);
 setupHeaderPopup("btnService", ["Service Link 1", "Service Link 2", "Service Link 3"]);
 setupHeaderPopup("btnAbout", ["About Link 1", "About Link 2", "About Link 3"]);
 

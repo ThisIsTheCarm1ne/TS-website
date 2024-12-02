@@ -60,7 +60,7 @@
     display: flex;
     flex-direction: column;
     gap: 24px;
-    width: 816px;
+    width: 42.5vw;
 }
 .imgContainer > img {
     border-radius: 24px;
@@ -70,14 +70,34 @@
     gap: 24px;
 }
 .imgSmallContainer > img {
-    width: 396px;
+    width: 20.625vw;
     height: 316px;
     border-radius: 24px;
+}
+@media only screen and (max-width: 1440px) {
+    .section {
+        padding: 3.33vw;
+    }
+    .dropdownBTN {
+        text-align: left;
+    }
+    .imgContainer {
+        width: 45vw;
+    }
+    .imgContainer > img {
+        width: 45vw;
+        height: 316px;
+    }
+    .imgSmallContainer > img {
+        width: 21.66vw;
+        height: 316px;
+    }
 }
 @media only screen and (max-width: 768px) {
     .section {
         flex-direction: column;
         gap: 56px;
+        margin-bottom: 149px;
     }
     .dropdownBTN {
         width: 91.6vw;
@@ -93,6 +113,9 @@
         flex-direction: column;
         gap: 24px;
         width: 91.6vw;
+    }
+    .imgContainer > img{
+        width: 100%;
     }
     .imgSmallContainer > img {
         width: 44.27vw;

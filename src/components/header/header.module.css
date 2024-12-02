@@ -40,7 +40,7 @@
 }
 .ctaSection > button {
     height: 40px;
-    width: 148px;
+    width: 7.71vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -102,6 +102,21 @@
     line-height: 20px;
 
     color: #555555;
+}
+@media only screen and (max-width: 1440px) {
+    .header {
+        gap: 6.66vw;
+        padding: 24px 5vw;
+    }
+    .nav {
+        gap: 2.22vw;
+    }
+    .ctaSection > button {
+        width: 10.3vw;
+    }
+    .header > svg {
+        min-width: 100px;
+    }
 }
 @media only screen and (max-width: 768px) {
     .hamburgerBtn {

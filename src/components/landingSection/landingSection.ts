@@ -44,7 +44,7 @@ export default function LandingSection() {
             <img
                 src="${landingSectionImage}"
                 class="${classes.img}" 
-                alt="Landing Image" 
+                alt="Landing Image Truck" 
             />
         </section>
     `;

@@ -4,8 +4,8 @@
     padding: 5vw;
 }
 .section > img {
-    width: 816px;
-    height: 600px;
+    width: 42.4vw;
+    height: 31.25vw;
 
     box-sizing: border-box;
 
@@ -15,7 +15,7 @@
 .form {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 2.1vw;
 }
 .contactsHeader {
     margin-top: 0;
@@ -24,11 +24,11 @@
 .inputContainers {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 2.1vw;
 }
 .inlineInputContainers {
     display: flex;
-    gap: 32px;
+    gap: 1.6vw;
 }
 .inputContainer {
     display: flex;
@@ -79,7 +79,7 @@
     justify-content: center;
 }
 .inputContainer > input, .passwordInputWrapper > input {
-    width: 392px;
+    width: 20.4vw;
 }
 .textArea {
     height: 144px;
@@ -110,7 +110,7 @@
     gap: 4px;
 }
 .passwordCheck {
-    width: 95px;
+    width: 5vw;
     height: 4px;
 
     background: #EFEFEF;
@@ -141,10 +141,31 @@
     width: 10vw;
     height: 48px;
 }
+@media only screen and (max-width: 1440px) {
+    .section {
+        padding: 3.33vw;
+    }
+    .section > img {
+        width: 45vw;
+        height: auto;
+    }
+    .form {
+        width: 41.66vw;
+    }
+    .inputContainer > input, .passwordInputWrapper > input {
+        width: 20vw;
+    }
+    .textArea {
+        width: 100%;
+    }
+}
 @media only screen and (max-width: 768px) {
     .section {
         flex-direction: column;
         gap: 5vw;
+    }
+    .form {
+        width: 100%;
     }
     .section > img {
         width: 92vw;
@@ -167,6 +188,7 @@
     }
     .form {
         gap: 32px;
+        width: 100%;
     }
     .contactsHeader {
         font-size: 40px;

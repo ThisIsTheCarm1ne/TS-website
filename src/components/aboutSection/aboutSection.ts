@@ -35,10 +35,10 @@ export default function AboutSection() {
             </div>
             <div class="${classes.imgContainer}">
                 <div class="${classes.imgSmallContainer}">
-                    <img src="${aboutSectionImage2}" />
-                    <img src="${aboutSectionImage1}" />          
+                    <img src="${aboutSectionImage2}" alt="truck" />
+                    <img src="${aboutSectionImage1}" alt="paperwork"/>          
                 </div>
-                <img src="${aboutSectionImage}" />
+                <img src="${aboutSectionImage}" alt="machinery"/>
             </div>
         </section>
     `;
