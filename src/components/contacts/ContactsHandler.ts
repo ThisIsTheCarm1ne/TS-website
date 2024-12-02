@@ -5,13 +5,26 @@ export default function setupContactsFormHandler() {
     const emailInput = document.getElementById('email');
     const passwordInput = document.getElementById('passwordInput');
     const passwordCheckInput = document.getElementById('passwordCheck');
+    const strengthBlocks = [
+        document.getElementById('passwordCheck'),
+        document.getElementById('passwordCheck1'),
+        document.getElementById('passwordCheck2'),
+        document.getElementById('passwordCheck3'),
+    ].filter(Boolean) as HTMLDivElement[];
     const errorClass = `${classes.inputError}`;
 
+    if (!form) {
+        return "No form";
+    }
     if (!emailInput) {
         return "No email input field";
     }
     if (!passwordInput) {
         return "No password input field";
+    }
+
+    if (!strengthBlocks) {
+        return "No password strength display";
     }
 
     // Email Validation
@@ -30,8 +43,18 @@ export default function setupContactsFormHandler() {
         const passwordValue = passwordInput.value.trim();
         const strength = calculatePasswordStrength(passwordValue);
 
+        strengthBlocks.forEach((block, index) => {
+            if (strength > index * 25) {
+                block.style.backgroundColor = getStrengthColor(strength);
+            } else {
+                block.style.backgroundColor = '#EFEFEF';
+            }
+        });
+        /*
         passwordCheckInput.style.width = `${strength}%`;
         passwordCheckInput.style.backgroundColor = getStrengthColor(strength);
+
+         */
     });
 
     function calculatePasswordStrength(password: string): number {

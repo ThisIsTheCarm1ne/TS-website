@@ -22,16 +22,22 @@
     color: #353535;
 }
 .listHeader {
-    margin-bottom: 5px;
+    margin-bottom: 15px;
 }
 .list {
     list-style: none;
     margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 .list > li {
     display: flex;
     align-items: stretch;
     gap: 8px;
+}
+.text > button {
+    font-size: 0.9vw;
 }
 .img {
     width: 42.5vw;
@@ -46,6 +52,9 @@
     .headerMain {
         font-size: 5.8vw;
         line-height: 7.3vw;
+    }
+    .text > button {
+        font-size: 2.1vw;
     }
     .img {
         width: 704px;

@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px;
+    padding: 0;
 
     position: fixed;
     width: 1824px;
@@ -24,4 +24,11 @@
     align-items: center;
     gap: 8px;
     font-size: 16px;
+}
+@media only screen and (max-width: 768px) {
+    .popup {
+        width: 52vw;
+        height: 92px;
+        left: 25%;
+    }
 }

@@ -71,6 +71,10 @@ h3 {
   line-height: 20px;
 
   color: #FEFEFE;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 button {
   border: none;
