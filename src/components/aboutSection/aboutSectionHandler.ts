@@ -17,7 +17,6 @@ export default function setupSlidingOutText(buttonId: string, svgIconId: string)
             return null;
         }
 
-        // Create the text container (initially hidden)
         const textContainer = document.createElement('div');
         textContainer.textContent = 'Определяет контентную часть для каждого элемента аккордеона. Часть контента, которая раскрывается при нажатии на заголовок.';
         textContainer.style.height = '0';
@@ -27,16 +26,19 @@ export default function setupSlidingOutText(buttonId: string, svgIconId: string)
         textContainer.style.transition = 'height 0.3s ease, opacity 0.2s ease';
         textContainer.className = `${classes.dropDownTextContainer}`;
 
-        // Append button and text container to the body
-        //document.getElementById("dropdownCollection").appendChild(textContainer);
         item.appendChild(textContainer);
 
-        // Add click event to toggle the sliding text
         button.addEventListener('click', () => {
             const isExpanded = textContainer.style.height === '0px' || textContainer.style.height === '';
 
             if (isExpanded) {
-                textContainer.style.height = '50px';
+                const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
+
+                if (vw <= 320) {
+                    textContainer.style.height = '100px';
+                } else {
+                    textContainer.style.height = '50px';
+                }
                 textContainer.style.opacity = '1';
 
                 button.style.borderBottomRightRadius = '0'

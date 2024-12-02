@@ -32,3 +32,14 @@
         left: 30%;
     }
 }
+@media only screen and (max-width: 320px) {
+    .popup {
+        height: auto;
+        width: 80%;
+        left: 50%;
+        bottom: 1px;
+    }
+    .firstPart > svg {
+        width: 30%;
+    }
+}

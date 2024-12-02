@@ -7,4 +7,22 @@
     flex-direction: row;
     align-items: center;
     gap: 80px;
+    overflow: hidden;
+}
+.section > svg {
+    width: 7.9vw;
+}
+@media only screen and (max-width: 768px) {
+    .section > svg {
+        min-width: 17vw;
+    }
+}
+@media only screen and (max-width: 320px) {
+    .section {
+        gap: 20px;
+
+    }
+    .section > svg {
+        min-width: 180px;
+    }
 }

@@ -82,6 +82,9 @@
     .dropdownBTN {
         width: 91.6vw;
     }
+    .dropdownBTN > svg {
+        width: 50px;
+    }
     .dropDownTextContainer {
         width: 91.6vw !important;
     }
@@ -96,6 +99,7 @@
         height: 41.2vw;
         border-radius: 24px;
     }
+
 }
 @media only screen and (max-width: 320px) {
     .header {

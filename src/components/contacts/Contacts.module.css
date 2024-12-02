@@ -45,7 +45,7 @@
 
     color: #8E8E8E;
 }
-.inputContainer > input, .textArea {
+.inputContainer > input, .textArea, .passwordInputWrapper > input {
     box-sizing: border-box;
 
     background: #FEFEFE;
@@ -64,7 +64,21 @@
 
     color: #353535;
 }
-.inputContainer > input {
+.passwordInputWrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.togglePasswordButton {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.inputContainer > input, .passwordInputWrapper > input {
     width: 392px;
 }
 .textArea {
@@ -136,7 +150,7 @@
         width: 92vw;
         height: auto;
     }
-    .inputContainer > input {
+    .inputContainer > input, .passwordInputWrapper > input {
         width: 44.3vw;
     }
     .passwordCheck {
@@ -163,7 +177,7 @@
         flex-direction: column;
         gap: 16px;
     }
-    .inputContainer > input {
+    .inputContainer > input, .passwordInputWrapper > input {
         width: 100%;
     }
     .passwordCheck {

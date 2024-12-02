@@ -50,11 +50,16 @@ export default function setupContactsFormHandler() {
                 block.style.backgroundColor = '#EFEFEF';
             }
         });
-        /*
-        passwordCheckInput.style.width = `${strength}%`;
-        passwordCheckInput.style.backgroundColor = getStrengthColor(strength);
 
-         */
+    });
+
+    document.addEventListener('DOMContentLoaded', () => {
+        const togglePasswordButton = document.getElementById('togglePassword');
+
+        togglePasswordButton.addEventListener('click', () => {
+            const isPasswordVisible = passwordInput.type === 'text';
+            passwordInput.type = isPasswordVisible ? 'password' : 'text';
+        });
     });
 
     function calculatePasswordStrength(password: string): number {
