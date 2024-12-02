@@ -27,8 +27,8 @@ body {
   font-family: 'Rubik';
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 1.05vw;
+  line-height: 1.25vw;
 }
 
 h1 {
@@ -84,5 +84,11 @@ button {
   :root {
     color: #213547;
     background-color: #ffffff;
+  }
+}
+@media only screen and (max-width: 768px) {
+  body {
+    font-size: 2.6vw;
+    line-height: 3.125vw;
   }
 }

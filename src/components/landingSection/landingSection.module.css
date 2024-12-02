@@ -1,6 +1,6 @@
 .landingSection {
     display: flex;
-    padding: 96px;
+    padding: 5vw;
     justify-content: space-between;
 }
 .text {
@@ -11,8 +11,8 @@
     font-family: 'Roboto Condensed';
     font-style: normal;
     font-weight: 600;
-    font-size: 72px;
-    line-height: 80px;
+    font-size: 3.75vw;
+    line-height: 4.17vw;
     margin: 0;
 }
 .headerHighlighted {
@@ -34,8 +34,20 @@
     gap: 8px;
 }
 .img {
-    width: 816px;
-    min-width: 432px;
-    height: 600px;
+    width: 42.5vw;
+    height: auto;
     border-radius: 32px;
+}
+@media only screen and (max-width: 768px) {
+    .landingSection {
+        flex-direction: column;
+        gap: 56px;
+    }
+    .headerMain {
+        font-size: 5.8vw;
+        line-height: 7.3vw;
+    }
+    .img {
+        width: 704px;
+    }
 }

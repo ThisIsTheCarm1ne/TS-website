@@ -6,7 +6,7 @@ export default function Contacts() {
     return `
         <section class="${classes.section}">
             <img src="${mapImage}" />
-            <form class="${classes.form}">
+            <form class="${classes.form}" id="form">
                 <div>
                     <h1>Контакты</h1>
                     <p>Свяжитесь с нами</p>
@@ -19,13 +19,14 @@ export default function Contacts() {
                             </div>
                             <div class="${classes.inputContainer}">
                                 <label for="email">Электронная почта</label>
-                                <input type="email" name="email" placeholder="input value">
+                                <input type="email" name="email" placeholder="input value" id="email">
                             </div>                   
                         </div>
                         <div class="${classes.inlineInputContainers}">
                             <div class="${classes.inputContainer}">
                                 <label for="password">Пароль</label>
-                                <input type="password" name="password" placeholder="Введите пароль">
+                                <input type="password" name="password" placeholder="Введите пароль" id="passwordInput">
+                                <div class="${classes.passwordCheck}" id="passwordCheck"></div>
                             </div>
                             <div class="${classes.inputContainer}">
                                 <label for="phone-number">Номер телефона</label>

@@ -1,7 +1,7 @@
 .section {
     display: flex;
     justify-content: space-between;
-    padding: 96px;
+    padding: 5vw;
 }
 .header, .paragraph {
     text-align: center;
@@ -22,7 +22,7 @@
     display: flex;
     align-items: flex-start;
     padding: 20px 24px;
-    width: 816px;
+    width: 42.5vw;
 
     box-sizing: border-box;
 
@@ -73,4 +73,27 @@
     width: 396px;
     height: 316px;
     border-radius: 24px;
+}
+@media only screen and (max-width: 768px) {
+    .section {
+        flex-direction: column;
+        gap: 56px;
+    }
+    .dropdownBTN {
+        width: 91.6vw;
+    }
+    .dropDownTextContainer {
+        width: 91.6vw !important;
+    }
+    .imgContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        width: 91.6vw;
+    }
+    .imgSmallContainer > img {
+        width: 44.27vw;
+        height: 41.2vw;
+        border-radius: 24px;
+    }
 }

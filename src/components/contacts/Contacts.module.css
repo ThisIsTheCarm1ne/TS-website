@@ -60,3 +60,10 @@
 
     color: #353535;
 }
+.passwordCheck {
+    height: 5px;
+}
+.inputError {
+    border: 2px solid red !important;
+    transition: border-color ease-in-out 0.2s;
+}

@@ -21,7 +21,7 @@ export default function setupSlidingOutText(buttonId: string, svgIconId: string)
         const textContainer = document.createElement('div');
         textContainer.textContent = 'Определяет контентную часть для каждого элемента аккордеона. Часть контента, которая раскрывается при нажатии на заголовок.';
         textContainer.style.height = '0';
-        textContainer.style.width = '816px';
+        textContainer.style.width = '42.5vw';
         textContainer.style.overflow = 'hidden';
         textContainer.style.opacity = '0';
         textContainer.style.transition = 'height 0.3s ease, opacity 0.2s ease';

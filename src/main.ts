@@ -11,6 +11,7 @@ import Footer from "./components/footer/Footer.ts";
 import CookiesPopup from "./components/cookiesPopup/CookiesPopup.ts";
 import cookiesPopupHandler from "./components/cookiesPopup/CookiesPopupHandler.ts";
 import setupSlidingOutText from "./components/aboutSection/aboutSectionHandler.ts";
+import setupContactsFormHandler from "./components/contacts/ContactsHandler.ts";
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
     ${Header()}
@@ -28,6 +29,8 @@ setupHeaderPopup("btnService", ["Service Link 1", "Service Link 2", "Service Lin
 setupHeaderPopup("btnAbout", ["About Link 1", "About Link 2", "About Link 3"]);
 
 setupSlidingOutText("dropdownBtn", "svgIcon");
+
+setupContactsFormHandler();
 
 cookiesPopupHandler("cookiesPopup", "closeCookiesButton");
 
